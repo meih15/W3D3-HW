@@ -2,14 +2,14 @@ require "byebug"
 
 def gamma_fnc(n)
 
-    debugger
-    
+
+return nil if n < 1
+
 return 1 if n == 1 
-return 1 if n - 1 == 1
-return nil if n == 0
 
 
-(n - 1) * gamma_fnc(n - 2)
+
+(n - 1) * gamma_fnc(n - 1)
 
 end
 
